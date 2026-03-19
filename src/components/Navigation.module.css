@@ -1,0 +1,50 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(8, 8, 10, 0.9), transparent);
+  transition: background 0.3s ease;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.linkButton {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.linkButton:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 2rem;
+  }
+  .links {
+    display: none; /* In a real app, implement hamburger menu */
+  }
+}
