@@ -12,6 +12,7 @@ export default function Navigation() {
         <Link href="/arquitectura" className={styles.linkButton}>Arquitectura</Link>
         <Link href="/cv" className={styles.linkButton}>CV</Link>
         <Link href="/blog" className={styles.linkButton}>Blog</Link>
+        <Link href="/contacto" className={styles.linkButton}>Contacto</Link>
       </div>
     </nav>
   );

@@ -6,13 +6,13 @@
   --surface-hover: #1c1c22;
   --text-primary: #f2f2f3;
   --text-secondary: #a1a1aa;
-  
+
   --border-color: rgba(255, 255, 255, 0.08);
 
   /* Art section accents */
   --art-accent-1: #ff7e67;
-  --art-accent-2: #da4fd0;
-  
+  --art-accent-2: #e70808;
+
   /* Architecture section accents */
   --arch-accent-1: #00f2fe;
   --arch-accent-2: #4facfe;
@@ -28,7 +28,8 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Outfit', sans-serif;
@@ -48,7 +49,12 @@ a:hover {
 }
 
 /* Typography styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -84,21 +90,47 @@ p {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
   animation: fadeIn 0.8s var(--transition-slow) forwards;
 }
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
 
 /* Grid layout utils */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+  
+  /* Make sure large inline headings scale down properly */
+  h1 {
+    font-size: 2rem !important;
+  }
 }
