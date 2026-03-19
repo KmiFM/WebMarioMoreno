@@ -6,7 +6,7 @@ export default function CVPage() {
       <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem', textAlign: 'center' }}>Mario Cristian Moreno Lazarte</h1>
       <p style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         Diseñador / Constructor / Artista Plástico<br/>
-        Nacido el 09/03/1987 (38 años) en San Miguel de Tucumán.<br/>
+        Nacido el 09/03/1987 (39 años) en San Miguel de Tucumán.<br/>
         MP: 2459
       </p>
       
